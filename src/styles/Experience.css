@@ -1,0 +1,127 @@
+.experience-section {
+  padding: 140px 20px;
+  background: #081226;
+}
+
+.experience-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: clamp(40px, 6vw, 60px);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.experience-subtitle {
+  text-align: center;
+  color: #94a3b8;
+  max-width: 750px;
+  margin: 0 auto 80px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.experience-card {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid #1e293b;
+  border-radius: 28px;
+  padding: 40px;
+}
+
+.company-header h3 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.company-header h4 {
+  color: #22d3ee;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.company-header span {
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.company-description {
+  margin-top: 25px;
+  color: #cbd5e1;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.project-card {
+  margin-top: 35px;
+  padding: 25px;
+  background: rgba(8, 18, 38, 0.8);
+  border: 1px solid #1e293b;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #22d3ee;
+  box-shadow: 0 15px 35px rgba(34, 211, 238, 0.12);
+}
+
+.project-card h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-role {
+  display: inline-block;
+  color: #22d3ee;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tech-stack span {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  color: #22d3ee;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 100px 15px;
+  }
+
+  .experience-card {
+    padding: 25px;
+  }
+
+  .company-header h3 {
+    font-size: 28px;
+  }
+
+  .project-card h5 {
+    font-size: 20px;
+  }
+
+  .tech-stack {
+    gap: 8px;
+  }
+}

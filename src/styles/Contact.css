@@ -1,0 +1,47 @@
+.contact-section {
+  padding: 140px 20px;
+  background: #020617;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 60px;
+}
+
+.contact-container p {
+  color: #94a3b8;
+  margin-top: 20px;
+}
+
+.contact-grid {
+  margin-top: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+}
+
+.contact-grid a {
+  text-decoration: none;
+  color: white;
+
+  background: rgba(15,23,42,.7);
+
+  border: 1px solid #1e293b;
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  transition: .3s;
+}
+
+.contact-grid a:hover {
+  transform: translateY(-8px);
+  border-color: #22d3ee;
+}
