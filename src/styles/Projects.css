@@ -102,3 +102,27 @@
 
   font-weight: 600;
 }
+
+
+@media (max-width: 768px) {
+
+  .projects-section {
+    padding: 100px 15px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    font-size: 22px;
+  }
+
+  .project-btn {
+    width: 100%;
+  }
+}

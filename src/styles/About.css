@@ -41,3 +41,33 @@
   line-height: 2;
   font-size: 18px;
 }
+
+
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 100px 20px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-left {
+    text-align: center;
+  }
+
+  .about-left h2 {
+    font-size: 38px;
+  }
+
+  .about-right {
+    padding: 25px;
+  }
+
+  .about-right p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}

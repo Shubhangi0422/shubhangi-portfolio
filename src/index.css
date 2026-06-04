@@ -14,3 +14,14 @@ body {
   background: #020617;
   color: white;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
