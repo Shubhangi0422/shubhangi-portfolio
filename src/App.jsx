@@ -15,6 +15,7 @@ import GPDP from "./pages/GPDP";
 import Edcil from "./pages/Edcil";
 import Panchayat from "./pages/Panchayat";
 
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function Home() {
   return (
@@ -29,6 +30,7 @@ function Home() {
       <Blog />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }
