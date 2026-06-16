@@ -13,7 +13,8 @@ import Footer from "./components/Footer";
 
 import GPDP from "./pages/GPDP";
 import Edcil from "./pages/Edcil";
-import Panchayat from "./pages/Panchayat";
+import Zeitlos from "./pages/Zeitlos";
+import Ideahub from "./pages/Ideahub";
 
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -42,7 +43,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects/gpdp" element={<GPDP />} />
         <Route path="/projects/edcil" element={<Edcil />} />
-        <Route path="/projects/panchayat" element={<Panchayat />} />
+        <Route path="/projects/zeitlos" element={<Zeitlos />} />
+        <Route path="/projects/ideahub" element={<Ideahub />} />
       </Routes>
     </BrowserRouter>
   );

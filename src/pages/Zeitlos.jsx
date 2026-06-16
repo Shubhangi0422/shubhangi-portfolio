@@ -2,19 +2,22 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import "../styles/GPDP.css";
 import "../styles/ProjectGallery.css";
-import image1 from "../assets/EDCIL1.png";
-import image2 from "../assets/EDCIL2.png";
+import image1 from "../assets/ZEITLOS1.png";
+import image2 from "../assets/ZEITLOS2.png";
+import image3 from "../assets/ZEITLOS3.png";
 
-function Edcil() {
+function Zeitlos() {
   const [activeImage, setActiveImage] = useState(0);
   const [imageLoaded, setImageLoaded] = useState({
     img1: false,
     img2: false,
+    img3: false,
   });
 
   const images = [
-    { src: image1, alt: "EdCIL Login Page", title: "Login Page" },
-    { src: image2, alt: "EdCIL Applicant View", title: "Applicant View" },
+    { src: image1, alt: "Zeitlos Home", title: "Storefront" },
+    { src: image2, alt: "Zeitlos Product", title: "Product Detail" },
+    { src: image3, alt: "Zeitlos Checkout", title: "Checkout Flow" },
   ];
 
   return (
@@ -24,10 +27,10 @@ function Edcil() {
       </Link>
 
       <section className="gpdp-hero">
-        <span className="gpdp-badge">Frontend Developer</span>
-        <h1 className="gpdp-title">EdCIL Recruiter Management Portal</h1>
+        <span className="gpdp-badge">Full Stack Developer</span>
+        <h1 className="gpdp-title">ZEITLOS | Premium E-Commerce</h1>
         <p className="gpdp-subtitle">
-          Recruitment management platform designed for managing applicants, vacancies and hiring workflows.
+          A full-stack luxury fashion storefront with a secure, high-performance architecture.
         </p>
       </section>
 
@@ -77,7 +80,7 @@ function Edcil() {
         <div className="info-grid">
           <div className="info-card">
             <h3>Role</h3>
-            <p>Frontend Developer</p>
+            <p>Full Stack Developer</p>
           </div>
           <div className="info-card">
             <h3>Status</h3>
@@ -85,17 +88,17 @@ function Edcil() {
           </div>
           <div className="info-card">
             <h3>Type</h3>
-            <p>Recruitment Portal</p>
+            <p>E-Commerce Platform</p>
           </div>
         </div>
 
         <div className="project-section">
           <h2>Project Overview</h2>
           <p style={{ marginBottom: "1rem", lineHeight: "1.8", color: "#f1f5f9" }}>
-            The EdCIL Recruitment Portal is a comprehensive platform built to streamline the hiring and application process for Educational Consultants India Limited (EdCIL). It offers robust user management, applicant tracking, and role-based access control. The platform features an intuitive interface for both candidates and administrators, ensuring a seamless application experience and efficient recruitment workflows.
+            ZEITLOS is a custom-built, full-stack e-commerce platform designed for a premium streetwear brand. Built with a focus on delivering a high-end user experience, the application features a modern, glassmorphism-inspired UI with smooth animations and dynamic interactions. The backend is engineered for security and scalability, featuring a robust JWT-based authentication system, rate-limited API endpoints, and a secure email-based password recovery flow. The platform includes a dedicated admin dashboard for seamless management of product listings and user data.
           </p>
           <div style={{ marginTop: "2rem", marginBottom: "1.5rem" }}>
-            <a href="https://tsgrecruitment.edcil.co.in/" target="_blank" rel="noopener noreferrer" className="cta-button">
+            <a href="https://zeitlos-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className="cta-button">
               🚀 View Live Project
             </a>
           </div>
@@ -105,32 +108,40 @@ function Edcil() {
             <div className="feature-card">
               <div className="feature-indicator"></div>
               <div className="feature-text">
-                <h4>Applicant Tracking System</h4>
-                <p>End-to-end management of job postings, applications, and candidate workflows.</p>
+                <h4>Secure Authentication System</h4>
+                <p>Implemented JWT-based login/registration with secure token handling and route protection.</p>
               </div>
             </div>
             
             <div className="feature-card">
               <div className="feature-indicator"></div>
               <div className="feature-text">
-                <h4>Role-Based Access</h4>
-                <p>Secure login and dashboards specific to recruiters, admins, and applicants.</p>
+                <h4>Advanced Password Recovery</h4>
+                <p>Engineered a secure, 3-step password reset flow using 6-digit email OTPs sent via Resend. Includes bcrypt hashing, 60-second cooldowns, and backend rate limiting.</p>
               </div>
             </div>
 
             <div className="feature-card">
               <div className="feature-indicator"></div>
               <div className="feature-text">
-                <h4>Interactive Dashboards</h4>
-                <p>Analytics and status tracking for real-time monitoring of the recruitment pipeline.</p>
+                <h4>Premium User Interface</h4>
+                <p>Designed a highly responsive, luxury aesthetic using Tailwind CSS and Framer Motion, featuring custom animations and gold accents.</p>
               </div>
             </div>
 
             <div className="feature-card">
               <div className="feature-indicator"></div>
               <div className="feature-text">
-                <h4>Security Measures</h4>
-                <p>Implemented robust security features including clickjacking protection and secure authentication.</p>
+                <h4>Admin Dashboard</h4>
+                <p>Built a protected administrative interface to manage the platform's core data seamlessly.</p>
+              </div>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-indicator"></div>
+              <div className="feature-text">
+                <h4>Resilient API Architecture</h4>
+                <p>Implemented graceful error handling and lazy initialization for third-party services to ensure zero server downtime during external API outages.</p>
               </div>
             </div>
           </div>
@@ -140,16 +151,21 @@ function Edcil() {
           <h2>Tech Stack</h2>
           <div className="tech-stack-enhanced">
             <div className="tech-item frontend">
-              <h4>Frontend Architecture</h4>
+              <h4>Frontend</h4>
               <span>React.js</span>
-              <span>JavaScript</span>
               <span>Tailwind CSS</span>
+              <span>Framer Motion</span>
             </div>
             <div className="tech-item backend">
-              <h4>Integration & UI</h4>
-              <span>RESTful APIs</span>
-              <span>Dashboard UI</span>
-              <span>Data Visualization</span>
+              <h4>Backend</h4>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>Resend</span>
+            </div>
+            <div className="tech-item database">
+              <h4>Database</h4>
+              <span>PostgreSQL</span>
+              <span>Prisma ORM</span>
             </div>
           </div>
         </div>
@@ -158,4 +174,4 @@ function Edcil() {
   );
 }
 
-export default Edcil;
+export default Zeitlos;
